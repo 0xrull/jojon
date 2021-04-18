@@ -1,0 +1,10 @@
+package userPackage;
+syntax = "proto3";
+
+message Request {
+  string idToken = 1;
+}
+
+message Response { 
+  string accessToken = 1; 
+}

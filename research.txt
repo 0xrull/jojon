@@ -1,0 +1,1030 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2.1.07" exportTime="Thu Apr 08 04:22:40 WIB 2021">
+  <item>
+    <time>Thu Apr 08 04:17:39 WIB 2021</time>
+    <url><![CDATA[https://www.googleapis.com/identitytoolkit/v3/relyingparty/createAuthUri?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></url>
+    <host ip="172.217.194.95">www.googleapis.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/identitytoolkit/v3/relyingparty/createAuthUri?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /identitytoolkit/v3/relyingparty/createAuthUri?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs HTTP/1.1
+x-client-version: ReactNative/JsCore/7.7.0/FirebaseCore-web
+Content-Type: application/json
+Content-Length: 70
+Host: www.googleapis.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"identifier":"lizbas@netplikaye.me","continueUri":"http://localhost"}]]></request>
+    <status>200</status>
+    <responselength>706</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Wed, 07 Apr 2021 21:17:39 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Content-Length: 123
+
+{
+  "kind": "identitytoolkit#CreateAuthUriResponse",
+  "registered": false,
+  "sessionId": "nMI-d6F-xuosG0w8hvrcItPWA3s"
+}
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:17:39 WIB 2021</time>
+    <url><![CDATA[https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></url>
+    <host ip="172.217.194.95">www.googleapis.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs HTTP/1.1
+x-client-version: ReactNative/JsCore/7.7.0/FirebaseCore-web
+Content-Type: application/json
+Content-Length: 82
+Host: www.googleapis.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"email":"lizbas@netplikaye.me","password":"Coegsekali1","returnSecureToken":true}]]></request>
+    <status>200</status>
+    <responselength>1922</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Date: Wed, 07 Apr 2021 21:17:40 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Content-Length: 1338
+
+{
+  "kind": "identitytoolkit#SignupNewUserResponse",
+  "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcHAtYXBpLXByb2QiLCJhdWQiOiJwcC1hcGktcHJvZCIsImF1dGhfdGltZSI6MTYxNzgzMDI2MCwidXNlcl9pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMiLCJzdWIiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwiaWF0IjoxNjE3ODMwMjYwLCJleHAiOjE2MTc4MzM4NjAsImVtYWlsIjoibGl6YmFzQG5ldHBsaWtheWUubWUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsibGl6YmFzQG5ldHBsaWtheWUubWUiXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.koEYHON42Gc8VzLgEsm4AK5vRkEgW_6iOegQ_O7DzShe9wbi1OfZQrypjhjfd7nUtylwjk7qZR5BEaY32y23xpXR6QYEG1lZpiWLKRzRHpLz4OHkJC6WmqT-9bEIDqhh1mgGW5mUm6nieaPfTOCO52YA245ErNutxpcgHftrzoqGAjFviYjaMzB0zeyRePC9SjC5dAMrZVG4hCUBCG_6Mm6uNyHUghD5CbYrwuXuoRbYeUVrhUw59gwkvi51JapGg20FtJ7s4LOHCW610LHHztAbRdA3Mm-CFGfBvocK-zyEW0o4McAgZql7W0Qnld9OWc-VDPSm4wqEXzuq4joR-A",
+  "email": "lizbas@netplikaye.me",
+  "refreshToken": "AGEhc0AL9OmpoK9QAYkewJ5YYZo79TwrDhu5WszAOMcOyLo0K1tT3EJeMAMzvtCTeJWc_f4IFbvgU_7vutT3rlMnpTo3aeDgEZz6M0LIagpgCQKUFHim_1LSSPpklypm2GnxZB9g3KXWrEnzyf3xif8OzuQ0mUhbxNezZ50Ha3_ml6fOVHzYyQXqHL1DJ9QDYFCKTjae4joUVv2g7olr62oj_7PEORKUdA",
+  "expiresIn": "3600",
+  "localId": "8bSf2888bHR79OXiHdcxVcJ6z4F3"
+}
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:17:40 WIB 2021</time>
+    <url><![CDATA[https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></url>
+    <host ip="172.217.194.95">www.googleapis.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs HTTP/1.1
+x-client-version: ReactNative/JsCore/7.7.0/FirebaseCore-web
+Content-Type: application/json
+Content-Length: 930
+Host: www.googleapis.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcHAtYXBpLXByb2QiLCJhdWQiOiJwcC1hcGktcHJvZCIsImF1dGhfdGltZSI6MTYxNzgzMDI2MCwidXNlcl9pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMiLCJzdWIiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwiaWF0IjoxNjE3ODMwMjYwLCJleHAiOjE2MTc4MzM4NjAsImVtYWlsIjoibGl6YmFzQG5ldHBsaWtheWUubWUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsibGl6YmFzQG5ldHBsaWtheWUubWUiXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.koEYHON42Gc8VzLgEsm4AK5vRkEgW_6iOegQ_O7DzShe9wbi1OfZQrypjhjfd7nUtylwjk7qZR5BEaY32y23xpXR6QYEG1lZpiWLKRzRHpLz4OHkJC6WmqT-9bEIDqhh1mgGW5mUm6nieaPfTOCO52YA245ErNutxpcgHftrzoqGAjFviYjaMzB0zeyRePC9SjC5dAMrZVG4hCUBCG_6Mm6uNyHUghD5CbYrwuXuoRbYeUVrhUw59gwkvi51JapGg20FtJ7s4LOHCW610LHHztAbRdA3Mm-CFGfBvocK-zyEW0o4McAgZql7W0Qnld9OWc-VDPSm4wqEXzuq4joR-A"}]]></request>
+    <status>200</status>
+    <responselength>1444</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Wed, 07 Apr 2021 21:17:40 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Content-Length: 861
+
+{
+  "kind": "identitytoolkit#GetAccountInfoResponse",
+  "users": [
+    {
+      "localId": "8bSf2888bHR79OXiHdcxVcJ6z4F3",
+      "email": "lizbas@netplikaye.me",
+      "passwordHash": "UkVEQUNURUQ=",
+      "emailVerified": false,
+      "passwordUpdatedAt": 1617830259849,
+      "providerUserInfo": [
+        {
+          "providerId": "password",
+          "federatedId": "lizbas@netplikaye.me",
+          "email": "lizbas@netplikaye.me",
+          "rawId": "lizbas@netplikaye.me"
+        }
+      ],
+      "validSince": "1617830259",
+      "lastLoginAt": "1617830259849",
+      "createdAt": "1617830259849",
+      "customAttributes": "{\"https://hasura.io/jwt/claims\":{\"x-hasura-default-role\":\"user\",\"x-hasura-allowed-roles\":[\"user\"],\"x-hasura-user-id\":\"8bSf2888bHR79OXiHdcxVcJ6z4F3\"}}",
+      "lastRefreshAt": "2021-04-07T21:17:39.849Z"
+    }
+  ]
+}
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:17:40 WIB 2021</time>
+    <url><![CDATA[https://pp-api-prod.firebaseio.com/.ws?v=5]]></url>
+    <host ip="35.201.97.85">pp-api-prod.firebaseio.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/.ws?v=5]]></path>
+    <extension>ws</extension>
+    <request base64="false"><![CDATA[GET /.ws?v=5 HTTP/1.1
+origin: https://pp-api-prod.firebaseio.com
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: Fzdf265sQEPiN7ZSs6UkWw==
+Sec-WebSocket-Version: 13
+Host: pp-api-prod.firebaseio.com
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+]]></request>
+    <status>101</status>
+    <responselength>254</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 101 Switching Protocols
+Server: nginx
+Date: Wed, 07 Apr 2021 21:17:41 GMT
+Connection: upgrade
+Upgrade: websocket
+Sec-WebSocket-Accept: Ccm1H0k0fk7JOVj38wRi/tPTdis=
+Strict-Transport-Security: max-age=31556926; includeSubDomains; preload
+
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:17:41 WIB 2021</time>
+    <url><![CDATA[https://securetoken.googleapis.com/v1/token?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></url>
+    <host ip="74.125.24.95">securetoken.googleapis.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/token?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/token?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs HTTP/1.1
+x-client-version: ReactNative/JsCore/7.7.0/FirebaseCore-web
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 265
+Host: securetoken.googleapis.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+grant_type=refresh_token&refresh_token=AGEhc0AL9OmpoK9QAYkewJ5YYZo79TwrDhu5WszAOMcOyLo0K1tT3EJeMAMzvtCTeJWc_f4IFbvgU_7vutT3rlMnpTo3aeDgEZz6M0LIagpgCQKUFHim_1LSSPpklypm2GnxZB9g3KXWrEnzyf3xif8OzuQ0mUhbxNezZ50Ha3_ml6fOVHzYyQXqHL1DJ9QDYFCKTjae4joUVv2g7olr62oj_7PEORKUdA]]></request>
+    <status>200</status>
+    <responselength>3228</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Date: Wed, 07 Apr 2021 21:17:42 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Content-Length: 2644
+
+{
+  "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g",
+  "expires_in": "3600",
+  "token_type": "Bearer",
+  "refresh_token": "AGEhc0AL9OmpoK9QAYkewJ5YYZo79TwrDhu5WszAOMcOyLo0K1tT3EJeMAMzvtCTeJWc_f4IFbvgU_7vutT3rlMnpTo3aeDgEZz6M0LIagpgCQKUFHim_1LSSPpklypm2GnxZB9g3KXWrEnzyf3xif8OzuQ0mUhbxNezZ50Ha3_ml6fOVHzYyQXqHL1DJ9QDYFCKTjae4joUVv2g7olr62oj_7PEORKUdA",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g",
+  "user_id": "8bSf2888bHR79OXiHdcxVcJ6z4F3",
+  "project_id": "65122057475"
+}
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:17:41 WIB 2021</time>
+    <url><![CDATA[https://securetoken.googleapis.com/v1/token?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></url>
+    <host ip="74.125.24.95">securetoken.googleapis.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/token?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/token?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs HTTP/1.1
+x-client-version: ReactNative/JsCore/7.7.0/FirebaseCore-web
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 265
+Host: securetoken.googleapis.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+grant_type=refresh_token&refresh_token=AGEhc0AL9OmpoK9QAYkewJ5YYZo79TwrDhu5WszAOMcOyLo0K1tT3EJeMAMzvtCTeJWc_f4IFbvgU_7vutT3rlMnpTo3aeDgEZz6M0LIagpgCQKUFHim_1LSSPpklypm2GnxZB9g3KXWrEnzyf3xif8OzuQ0mUhbxNezZ50Ha3_ml6fOVHzYyQXqHL1DJ9QDYFCKTjae4joUVv2g7olr62oj_7PEORKUdA]]></request>
+    <status>200</status>
+    <responselength>3228</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Wed, 07 Apr 2021 21:17:42 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Content-Length: 2644
+
+{
+  "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g",
+  "expires_in": "3600",
+  "token_type": "Bearer",
+  "refresh_token": "AGEhc0AL9OmpoK9QAYkewJ5YYZo79TwrDhu5WszAOMcOyLo0K1tT3EJeMAMzvtCTeJWc_f4IFbvgU_7vutT3rlMnpTo3aeDgEZz6M0LIagpgCQKUFHim_1LSSPpklypm2GnxZB9g3KXWrEnzyf3xif8OzuQ0mUhbxNezZ50Ha3_ml6fOVHzYyQXqHL1DJ9QDYFCKTjae4joUVv2g7olr62oj_7PEORKUdA",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g",
+  "user_id": "8bSf2888bHR79OXiHdcxVcJ6z4F3",
+  "project_id": "65122057475"
+}
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:17:42 WIB 2021</time>
+    <url><![CDATA[https://prod.pp-app-api.com/v1/graphql]]></url>
+    <host ip="54.67.37.35">prod.pp-app-api.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/graphql]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/graphql HTTP/1.1
+accept: */*
+authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g
+Content-Type: application/json
+Content-Length: 373
+Host: prod.pp-app-api.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"operationName":"insert_multiple_users","variables":{"objects":{"email":"lizbas@netplikaye.me","first_name":"Anggun","last_name":"Sa","last_logged_in":"2021-04-07T21:17:42.403Z"}},"query":"mutation insert_multiple_users($objects: [users_insert_input!]!) {\n  insert_users(objects: $objects) {\n    returning {\n      id\n      __typename\n    }\n    __typename\n  }\n}\n"}]]></request>
+    <status>200</status>
+    <responselength>336</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:17:43 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+Server: Warp/3.3.10
+x-request-id: c0f51cec-b42e-4b03-980c-33d5fec98755
+Content-Length: 120
+
+{"data":{"insert_users":{"returning" : [{"id":131789,"__typename":"users"}], "__typename" : "users_mutation_response"}}}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:17:43 WIB 2021</time>
+    <url><![CDATA[https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></url>
+    <host ip="172.217.194.95">www.googleapis.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs HTTP/1.1
+x-client-version: ReactNative/JsCore/7.7.0/FirebaseCore-web
+Content-Type: application/json
+Content-Length: 1127
+Host: www.googleapis.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g"}]]></request>
+    <status>200</status>
+    <responselength>1444</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:17:43 GMT
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Content-Length: 861
+
+{
+  "kind": "identitytoolkit#GetAccountInfoResponse",
+  "users": [
+    {
+      "localId": "8bSf2888bHR79OXiHdcxVcJ6z4F3",
+      "email": "lizbas@netplikaye.me",
+      "passwordHash": "UkVEQUNURUQ=",
+      "emailVerified": false,
+      "passwordUpdatedAt": 1617830259849,
+      "providerUserInfo": [
+        {
+          "providerId": "password",
+          "federatedId": "lizbas@netplikaye.me",
+          "email": "lizbas@netplikaye.me",
+          "rawId": "lizbas@netplikaye.me"
+        }
+      ],
+      "validSince": "1617830259",
+      "lastLoginAt": "1617830259849",
+      "createdAt": "1617830259849",
+      "customAttributes": "{\"https://hasura.io/jwt/claims\":{\"x-hasura-default-role\":\"user\",\"x-hasura-allowed-roles\":[\"user\"],\"x-hasura-user-id\":\"8bSf2888bHR79OXiHdcxVcJ6z4F3\"}}",
+      "lastRefreshAt": "2021-04-07T21:17:42.317Z"
+    }
+  ]
+}
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:18:32 WIB 2021</time>
+    <url><![CDATA[http://connectivitycheck.gstatic.com/generate_204]]></url>
+    <host ip="172.217.194.94">connectivitycheck.gstatic.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/generate_204]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /generate_204 HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.0; Port akun utama Build/NBD92Y)
+Host: connectivitycheck.gstatic.com
+Connection: close
+Accept-Encoding: gzip, deflate
+
+]]></request>
+    <status>204</status>
+    <responselength>102</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 204 No Content
+Content-Length: 0
+Date: Wed, 07 Apr 2021 21:18:32 GMT
+Connection: close
+
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:18:33 WIB 2021</time>
+    <url><![CDATA[http://connectivitycheck.gstatic.com/generate_204]]></url>
+    <host ip="172.217.194.94">connectivitycheck.gstatic.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/generate_204]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /generate_204 HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.0; Port akun utama Build/NBD92Y)
+Host: connectivitycheck.gstatic.com
+Connection: close
+Accept-Encoding: gzip, deflate
+
+]]></request>
+    <status>204</status>
+    <responselength>102</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 204 No Content
+Content-Length: 0
+Date: Wed, 07 Apr 2021 21:18:33 GMT
+Connection: close
+
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:18:35 WIB 2021</time>
+    <url><![CDATA[http://connectivitycheck.gstatic.com/generate_204]]></url>
+    <host ip="172.217.194.94">connectivitycheck.gstatic.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/generate_204]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /generate_204 HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.0; Port akun utama Build/NBD92Y)
+Host: connectivitycheck.gstatic.com
+Connection: close
+Accept-Encoding: gzip, deflate
+
+]]></request>
+    <status>204</status>
+    <responselength>102</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 204 No Content
+Content-Length: 0
+Date: Wed, 07 Apr 2021 21:18:35 GMT
+Connection: close
+
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:18:39 WIB 2021</time>
+    <url><![CDATA[http://connectivitycheck.gstatic.com/generate_204]]></url>
+    <host ip="172.217.194.94">connectivitycheck.gstatic.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/generate_204]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /generate_204 HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.0; Port akun utama Build/NBD92Y)
+Host: connectivitycheck.gstatic.com
+Connection: close
+Accept-Encoding: gzip, deflate
+
+]]></request>
+    <status>204</status>
+    <responselength>102</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 204 No Content
+Content-Length: 0
+Date: Wed, 07 Apr 2021 21:18:39 GMT
+Connection: close
+
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:18:47 WIB 2021</time>
+    <url><![CDATA[http://connectivitycheck.gstatic.com/generate_204]]></url>
+    <host ip="172.217.194.94">connectivitycheck.gstatic.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/generate_204]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /generate_204 HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.0; Port akun utama Build/NBD92Y)
+Host: connectivitycheck.gstatic.com
+Connection: close
+Accept-Encoding: gzip, deflate
+
+]]></request>
+    <status>204</status>
+    <responselength>102</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 204 No Content
+Content-Length: 0
+Date: Wed, 07 Apr 2021 21:18:47 GMT
+Connection: close
+
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:19:03 WIB 2021</time>
+    <url><![CDATA[http://connectivitycheck.gstatic.com/generate_204]]></url>
+    <host ip="172.217.194.94">connectivitycheck.gstatic.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/generate_204]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /generate_204 HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.0; Port akun utama Build/NBD92Y)
+Host: connectivitycheck.gstatic.com
+Connection: close
+Accept-Encoding: gzip, deflate
+
+]]></request>
+    <status>204</status>
+    <responselength>102</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 204 No Content
+Content-Length: 0
+Date: Wed, 07 Apr 2021 21:19:03 GMT
+Connection: close
+
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:19:07 WIB 2021</time>
+    <url><![CDATA[https://www.googleapis.com/identitytoolkit/v3/relyingparty/getOobConfirmationCode?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></url>
+    <host ip="172.217.194.95">www.googleapis.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/identitytoolkit/v3/relyingparty/getOobConfirmationCode?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /identitytoolkit/v3/relyingparty/getOobConfirmationCode?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs HTTP/1.1
+x-client-version: ReactNative/JsCore/7.7.0/FirebaseCore-web
+Content-Type: application/json
+Content-Length: 1156
+Host: www.googleapis.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"requestType":"VERIFY_EMAIL","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g"}]]></request>
+    <status>200</status>
+    <responselength>680</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:19:08 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Content-Length: 98
+
+{
+  "kind": "identitytoolkit#GetOobConfirmationCodeResponse",
+  "email": "lizbas@netplikaye.me"
+}
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:19:35 WIB 2021</time>
+    <url><![CDATA[http://connectivitycheck.gstatic.com/generate_204]]></url>
+    <host ip="172.217.194.94">connectivitycheck.gstatic.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/generate_204]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /generate_204 HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.0; Port akun utama Build/NBD92Y)
+Host: connectivitycheck.gstatic.com
+Connection: close
+Accept-Encoding: gzip, deflate
+
+]]></request>
+    <status>204</status>
+    <responselength>102</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 204 No Content
+Content-Length: 0
+Date: Wed, 07 Apr 2021 21:19:36 GMT
+Connection: close
+
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:19:36 WIB 2021</time>
+    <url><![CDATA[https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></url>
+    <host ip="172.217.194.95">www.googleapis.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyCX35qaNrESINLfA4qwfqPQb6cNHnEzAMs HTTP/1.1
+x-client-version: ReactNative/JsCore/7.7.0/FirebaseCore-web
+Content-Type: application/json
+Content-Length: 1127
+Host: www.googleapis.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g"}]]></request>
+    <status>200</status>
+    <responselength>1443</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Pragma: no-cache
+Date: Wed, 07 Apr 2021 21:19:36 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Content-Length: 860
+
+{
+  "kind": "identitytoolkit#GetAccountInfoResponse",
+  "users": [
+    {
+      "localId": "8bSf2888bHR79OXiHdcxVcJ6z4F3",
+      "email": "lizbas@netplikaye.me",
+      "passwordHash": "UkVEQUNURUQ=",
+      "emailVerified": true,
+      "passwordUpdatedAt": 1617830259849,
+      "providerUserInfo": [
+        {
+          "providerId": "password",
+          "federatedId": "lizbas@netplikaye.me",
+          "email": "lizbas@netplikaye.me",
+          "rawId": "lizbas@netplikaye.me"
+        }
+      ],
+      "validSince": "1617830259",
+      "lastLoginAt": "1617830259849",
+      "createdAt": "1617830259849",
+      "customAttributes": "{\"https://hasura.io/jwt/claims\":{\"x-hasura-default-role\":\"user\",\"x-hasura-allowed-roles\":[\"user\"],\"x-hasura-user-id\":\"8bSf2888bHR79OXiHdcxVcJ6z4F3\"}}",
+      "lastRefreshAt": "2021-04-07T21:17:42.317Z"
+    }
+  ]
+}
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:19:36 WIB 2021</time>
+    <url><![CDATA[https://prod.pp-app-api.com/v1/graphql]]></url>
+    <host ip="54.67.37.35">prod.pp-app-api.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/graphql]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/graphql HTTP/1.1
+accept: */*
+authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g
+Content-Type: application/json
+Content-Length: 117
+Host: prod.pp-app-api.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"operationName":null,"variables":{},"query":"{\n  users {\n    first_name\n    last_name\n    __typename\n  }\n}\n"}]]></request>
+    <status>200</status>
+    <responselength>297</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:19:37 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+Server: Warp/3.3.10
+x-request-id: 79efc9e3-a501-4f2c-b9d9-5ed6d4c1ec5c
+Content-Length: 82
+
+{"data":{"users":[{"first_name":"Anggun","last_name":"Sa","__typename":"users"}]}}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:19:36 WIB 2021</time>
+    <url><![CDATA[https://prod.pp-app-api.com/v1/graphql]]></url>
+    <host ip="54.67.37.35">prod.pp-app-api.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/graphql]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/graphql HTTP/1.1
+accept: */*
+authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g
+Content-Type: application/json
+Content-Length: 424
+Host: prod.pp-app-api.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"operationName":null,"variables":{},"query":"{\n  scans(order_by: {created_at: desc}) {\n    id\n    tracking_number\n    created_at\n    batch_uuid\n    tracking_numbers(where: {result: {_eq: \"valid\"}}) {\n      created_at\n      transaction_key\n      __typename\n    }\n    tracking_numbers_aggregate {\n      aggregate {\n        count\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"}]]></request>
+    <status>200</status>
+    <responselength>236</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:19:37 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+Server: Warp/3.3.10
+x-request-id: 0e80b720-621e-4c34-9640-9f3c1afe19ee
+Content-Length: 21
+
+{"data":{"scans":[]}}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:19:55 WIB 2021</time>
+    <url><![CDATA[https://prod.pp-app-api.com/v1/graphql]]></url>
+    <host ip="54.67.37.35">prod.pp-app-api.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/graphql]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/graphql HTTP/1.1
+accept: */*
+authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g
+Content-Type: application/json
+Content-Length: 143
+Host: prod.pp-app-api.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"operationName":"getWalletAddress","variables":{},"query":"query getWalletAddress {\n  users {\n    wallet_address\n    __typename\n  }\n}\n"}]]></request>
+    <status>200</status>
+    <responselength>280</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:19:55 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+Server: Warp/3.3.10
+x-request-id: 87caf04d-39cd-4bb7-88ba-d9bbe76759d9
+Content-Length: 65
+
+{"data":{"users":[{"wallet_address":null,"__typename":"users"}]}}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:20:10 WIB 2021</time>
+    <url><![CDATA[https://prod.pp-app-api.com/v1/graphql]]></url>
+    <host ip="54.67.37.35">prod.pp-app-api.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/graphql]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/graphql HTTP/1.1
+accept: */*
+authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g
+Content-Type: application/json
+Content-Length: 355
+Host: prod.pp-app-api.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"operationName":"update_user","variables":{"wallet_address":"zil12xmgz2n5hqmxkgq2cshakqklzcz3px4v7k5ww2"},"query":"mutation update_user($wallet_address: String!) {\n  update_users(where: {}, _set: {wallet_address: $wallet_address}) {\n    affected_rows\n    returning {\n      id\n      wallet_address\n      __typename\n    }\n    __typename\n  }\n}\n"}]]></request>
+    <status>200</status>
+    <responselength>419</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:20:10 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+Server: Warp/3.3.10
+x-request-id: 73fe0b9a-62b7-44b8-ae40-975ad08e1737
+Content-Length: 203
+
+{"data":{"update_users":{"affected_rows" : 1, "returning" : [{"id":131789,"wallet_address":"zil12xmgz2n5hqmxkgq2cshakqklzcz3px4v7k5ww2","__typename":"users"}], "__typename" : "users_mutation_response"}}}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:20:10 WIB 2021</time>
+    <url><![CDATA[https://prod.pp-app-api.com/v1/graphql]]></url>
+    <host ip="54.67.37.35">prod.pp-app-api.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/graphql]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/graphql HTTP/1.1
+accept: */*
+authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g
+Content-Type: application/json
+Content-Length: 143
+Host: prod.pp-app-api.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"operationName":"getWalletAddress","variables":{},"query":"query getWalletAddress {\n  users {\n    wallet_address\n    __typename\n  }\n}\n"}]]></request>
+    <status>200</status>
+    <responselength>321</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:20:11 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+Server: Warp/3.3.10
+x-request-id: 8e626fb9-4372-4ca6-9ef5-13c235d1e065
+Content-Length: 105
+
+{"data":{"users":[{"wallet_address":"zil12xmgz2n5hqmxkgq2cshakqklzcz3px4v7k5ww2","__typename":"users"}]}}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:20:14 WIB 2021</time>
+    <url><![CDATA[https://prod.pp-app-api.com/v1/graphql]]></url>
+    <host ip="54.67.37.35">prod.pp-app-api.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/graphql]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/graphql HTTP/1.1
+accept: */*
+authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g
+Content-Type: application/json
+Content-Length: 94
+Host: prod.pp-app-api.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"operationName":null,"variables":{},"query":"{\n  users {\n    __typename\n    id\n  }\n}\n"}]]></request>
+    <status>200</status>
+    <responselength>270</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:20:15 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+Server: Warp/3.3.10
+x-request-id: f21c697a-71dc-4335-b14a-9026880a1eac
+Content-Length: 55
+
+{"data":{"users":[{"__typename":"users","id":131789}]}}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:20:37 WIB 2021</time>
+    <url><![CDATA[https://prod.pp-app-api.com/v1/graphql]]></url>
+    <host ip="54.67.37.35">prod.pp-app-api.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/graphql]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/graphql HTTP/1.1
+accept: */*
+authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g
+Content-Type: application/json
+Content-Length: 404
+Host: prod.pp-app-api.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"operationName":"insert_multiple_scans","variables":{"objects":[{"user_id":131789,"tracking_number":"LP190899786SG","longitude":0,"latitude":0,"accuracy":0,"batch_uuid":"eb6cba13-6ed3-4ee1-8cc2-1959b6d5b22b"}]},"query":"mutation insert_multiple_scans($objects: [scans_insert_input!]!) {\n  insert_scans(objects: $objects) {\n    returning {\n      id\n      __typename\n    }\n    __typename\n  }\n}\n"}]]></request>
+    <status>200</status>
+    <responselength>336</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:20:38 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+Server: Warp/3.3.10
+x-request-id: 790c7588-11b5-4bec-8a5a-c91e3718c2e2
+Content-Length: 120
+
+{"data":{"insert_scans":{"returning" : [{"id":700291,"__typename":"scans"}], "__typename" : "scans_mutation_response"}}}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:20:39 WIB 2021</time>
+    <url><![CDATA[https://prod.pp-app-api.com/v1/graphql]]></url>
+    <host ip="54.67.37.35">prod.pp-app-api.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/v1/graphql]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /v1/graphql HTTP/1.1
+accept: */*
+authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOGM3OTdlMDQ5YWFkZWViOWM5M2RiZGU3ZDAwMzJmNjk3NjYwYmQiLCJ0eXAiOiJKV1QifQ.eyJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6InVzZXIiLCJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiXSwieC1oYXN1cmEtdXNlci1pZCI6IjhiU2YyODg4YkhSNzlPWGlIZGN4VmNKNno0RjMifSwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3BwLWFwaS1wcm9kIiwiYXVkIjoicHAtYXBpLXByb2QiLCJhdXRoX3RpbWUiOjE2MTc4MzAyNjAsInVzZXJfaWQiOiI4YlNmMjg4OGJIUjc5T1hpSGRjeFZjSjZ6NEYzIiwic3ViIjoiOGJTZjI4ODhiSFI3OU9YaUhkY3hWY0o2ejRGMyIsImlhdCI6MTYxNzgzMDI2MiwiZXhwIjoxNjE3ODMzODYyLCJlbWFpbCI6ImxpemJhc0BuZXRwbGlrYXllLm1lIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpemJhc0BuZXRwbGlrYXllLm1lIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HF3KOqh5HMXKq93UwByM7Iz_EQUxy10ydqojxXfu5Okec48LIxxxfdMqdCgSrWPAa9poOzlqVb8IzyPKvzbyZIOlhriScn2MiuDbV9OL7jPIfyoG1Guj7VZoEbniuf3IJkcOyWvh51lwebzklmIOKZ8SJYj00AxIfsNH95rIxzOrvKKFZXJbtZSzFXewnPvrT8Q0vPGWlqyQb3WBxp33ygtlvdBq3uifPeveYcFKpuwZnob72oWDZGdRY5MaiG-D831L5Wvsw240i7dS_ZL3eduvU8SD-7RsjodExIUz5drGc878ksZxPfzOXNBuKNHZN7IE65m3UzIMopQdj0Qy-g
+Content-Type: application/json
+Content-Length: 424
+Host: prod.pp-app-api.com
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+{"operationName":null,"variables":{},"query":"{\n  scans(order_by: {created_at: desc}) {\n    id\n    tracking_number\n    created_at\n    batch_uuid\n    tracking_numbers(where: {result: {_eq: \"valid\"}}) {\n      created_at\n      transaction_key\n      __typename\n    }\n    tracking_numbers_aggregate {\n      aggregate {\n        count\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"}]]></request>
+    <status>200</status>
+    <responselength>582</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Wed, 07 Apr 2021 21:20:39 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+Server: Warp/3.3.10
+x-request-id: 86f6c822-2969-4490-b8e6-b1ec08613d25
+Content-Length: 366
+
+{"data":{"scans":[{"id":700291,"tracking_number":"LP190899786SG","created_at":"2021-04-07T21:20:38.73322+00:00","batch_uuid":"eb6cba13-6ed3-4ee1-8cc2-1959b6d5b22b","tracking_numbers":[],"tracking_numbers_aggregate":{"aggregate" : {"count" : 0, "__typename" : "tracking_numbers_aggregate_fields"}, "__typename" : "tracking_numbers_aggregate"},"__typename":"scans"}]}}]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Apr 08 04:20:40 WIB 2021</time>
+    <url><![CDATA[http://connectivitycheck.gstatic.com/generate_204]]></url>
+    <host ip="172.217.194.94">connectivitycheck.gstatic.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/generate_204]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /generate_204 HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.0; Port akun utama Build/NBD92Y)
+Host: connectivitycheck.gstatic.com
+Connection: close
+Accept-Encoding: gzip, deflate
+
+]]></request>
+    <status>204</status>
+    <responselength>102</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 204 No Content
+Content-Length: 0
+Date: Wed, 07 Apr 2021 21:20:40 GMT
+Connection: close
+
+]]></response>
+    <comment></comment>
+  </item>
+</items>
+

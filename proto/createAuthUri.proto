@@ -1,0 +1,11 @@
+package userPackage;
+syntax = "proto3";
+
+message Request {
+  string email = 1;
+  string link = 2;
+}
+
+message Response { 
+  string accessToken = 1; 
+}
